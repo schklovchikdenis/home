@@ -15,6 +15,7 @@ $('.wrapper').addClass('loaded');
 if(isMobile.iOS()){
 	var act="touchstart";
 }
+
 // Mobile menu
 $('.menu__icon').click(function(event) {
 	$(this).toggleClass('active');

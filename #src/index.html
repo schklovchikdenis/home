@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-   @@include('_head.html',{"title": "Новая страница"})
+@@include('_head.html',{"title": "Home"})
+
 <body>
    <div class="wrapper">
-      @@include('_header.html')
-      <h1>111</h1>
+      <section class="fullscreen">
+         <section class="fullscreen__body">
+            @@include('_header.html')
+            <div class="fullscreen__caption">
+               <div class="fullscreen__title">Welcome to STARTUP</div>
+               <div class="fullscreen__subtitle">Your Favourite Creative Agency Template</div>
+               <div class="fullscreen__button">
+                  <a href="" class="fullscreen__link">Get Started</a>
+               </div>
+            </div>
+         </section>
+      </section>
+      <section class="service">
+         <div class="service__row">
+            <div class="service__column">
+               <div class="service__icon"></div>
+               .service__text
+            </div>
+         </div>
+      </section>
       @@include('_footer.html')
    </div>
    <!-- @@include('_popup.html')  -->
    @@include('_js.html')
 </body>
+
 </html>
