@@ -147,6 +147,7 @@ body.lock {
   max-width: 1100px;
   margin: 0 auto;
   width: 100%;
+  border: 1px solid #15eb15;
 }
 
 .form-row {
@@ -1271,6 +1272,22 @@ body.ie .ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -30px;
+}
+
+.content-about__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-left: 30px;
+}
+
+.content-about__text {
+  /* Style for "Lorem ipsu" */
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @media (min-width: 780px) {
