@@ -117,11 +117,11 @@ body {
       &:hover .icon-fa-code,
       &:hover .icon-fa-support {
          color: #fff;
-         @include anim(0.3s,0s);
+         @include anim(0.3s, 0s);
       }
       &:hover .service__icon {
          background-color: #c0301c;
-         @include anim(0.3s,0s);
+         @include anim(0.3s, 0s);
       }
 
       // border: 1px solid green;
@@ -136,7 +136,7 @@ body {
       justify-content: center;
       align-items: center;
       margin: 0px 0px 30px 0px;
-      @include anim(0.3s,0s);
+      @include anim(0.3s, 0s);
       @media (max-width: 700px) {
          margin: 0px 0px 20px 0px;
       }
@@ -146,10 +146,12 @@ body {
    }
 }
 
-.icon-fa-font, .icon-fa-code, .icon-fa-support {
+.icon-fa-font,
+.icon-fa-code,
+.icon-fa-support {
    font-size: 40px;
    color: #c0301c;
-   @include anim(0.3s,0s);
+   @include anim(0.3s, 0s);
 }
 
 .text-service {
@@ -185,3 +187,16 @@ body {
 
 //====================================================================================================
 
+.about {
+   padding: 102px 100px;
+   background-color: #f8f8f8;
+}
+.content-about {
+   // .content-about__row
+   &__row {
+      display: flex;
+   }
+   // .content-about__column
+   &__column {
+   }
+}

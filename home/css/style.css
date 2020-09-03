@@ -1262,6 +1262,17 @@ body.ie .ibg img {
   line-height: 24px;
 }
 
+.about {
+  padding: 102px 100px;
+  background-color: #f8f8f8;
+}
+
+.content-about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 780px) {
   .fullscreen__title {
     font-size: 48px;
