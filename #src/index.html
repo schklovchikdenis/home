@@ -4,6 +4,7 @@
 
 <body>
    <div class="wrapper">
+      <!-- Section Fullscreen -->
       <section class="fullscreen">
          <section class="fullscreen__body">
             @@include('_header.html')
@@ -11,20 +12,59 @@
                <div class="fullscreen__title">Welcome to STARTUP</div>
                <div class="fullscreen__subtitle">Your Favourite Creative Agency Template</div>
                <div class="fullscreen__button">
-                  <a href="" class="fullscreen__link">Get Started</a>
+                  <a href="" class="fullscreen__link btn">Get Started</a>
                </div>
             </div>
          </section>
       </section>
+      <!-- Section Service -->
       <section class="service">
-         <div class="service__row">
-            <div class="service__column">
-               <div class="service__icon"></div>
-               .service__text
+         <div class="service__content _container">
+            <h1 class="service__title title">Services</h1>
+            <div class="service__subtitle subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+            <div class="service__row">
+               <div class="service__column">
+                  <div class="service__icon"><i class="icon-fa-font"></i></div>
+                  <div class="service__text text-service">
+                     <div class="text-service__title">Clean Typography</div>
+                     <div class="text-service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+                        dicta impedit. Lorem ipsum.                        
+                     </div>                  
+                  </div>
+               </div>
+               <div class="service__column">
+                  <div class="service__icon"><i class="icon-fa-code"></i></div>
+                  <div class="service__text text-service">
+                     <div class="text-service__title">Clean Typography</div>
+                     <div class="text-service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+                        dicta impedit. Lorem ipsum.
+                     </div>                  
+                  </div>
+               </div>
+               <div class="service__column">
+                  <div class="service__icon"><i class="icon-fa-support"></i></div>
+                  <div class="service__text text-service">
+                     <div class="text-service__title">Clean Typography</div>
+                     <div class="text-service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+                        dicta impedit. Lorem ipsum.
+                     </div>                  
+                  </div>
+               </div>
             </div>
+
          </div>
       </section>
-      @@include('_footer.html')
+      <!-- Section AboutUs -->
+      <section class="about">
+         <div class="about__content _container">
+            <div class="about__title title">About us</div>
+            <div class="about__subtitle subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>            
+         </div>         
+      </section>
+      <!-- @@include('_footer.html') -->
    </div>
    <!-- @@include('_popup.html')  -->
    @@include('_js.html')

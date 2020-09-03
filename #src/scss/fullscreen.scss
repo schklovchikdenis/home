@@ -51,12 +51,12 @@
 
    // .fullscreen__button
    &__button {
-      display: flex;
-      flex: 0 1 auto;
-      flex-direction: column;
-      justify-content: center;
+      // display: flex;
+      // flex: 0 1 auto;
+      // flex-direction: column;
+      // justify-content: center;
       // margin: 20px 0px 0px 0px;
-      text-align: center;
+      // text-align: center;
    }
 
    // .fullscreen__link
@@ -65,16 +65,5 @@
       font-family: Montserrat;
       font-size: 16px;
       font-weight: 400;
-      text-transform: uppercase;
-      border-radius: 2px;
-      border: 2px solid #ffffff;
-      margin: 0px auto;
-      padding: 15px 35px;
-      @include anim(0.3s, 0s);
-      &:hover {
-         color: #c0301c;
-         background-color: #fff;
-         @include anim(0.3s, 0s);
-      }
    }
 }
