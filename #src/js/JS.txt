@@ -14,7 +14,7 @@
 //@prepros-append slick.min.js
 //@prepros-append typed.min.js
 
-Подключаем в фаилик main.js
+Подключаем в фаилик app.js
 //@prepros-append map.js
 //@prepros-append sliders.js
 //@prepros-append scroll.js

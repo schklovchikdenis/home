@@ -1,13 +1,15 @@
 //SLIDERS
-if($('.mainslider').length>0){
-	$('.mainslider').slick({
-		//autoplay: true,
-		//infinite: false,
-		dots: true,
-		arrows: false,
+if ($('.slider-about').length>0){
+	$('.slider-about').slick({
+		// autoplay: true,
+		infinite: false,
+		// dots: true,
+		arrows: true,
 		accessibility:false,
-		slidesToShow:1,
+		slidesToShow: 4,		
 		autoplaySpeed: 3000,
+		variableWidth: true,
+		// centerMode: true,		
 		//asNavFor:'',
 		//appendDots:
 		//appendArrows:$('.mainslider-arrows .container'),

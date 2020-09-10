@@ -1116,8 +1116,8 @@ body.ie .ibg img {
 
 @font-face {
   font-family: "home";
-  src: url("../fonts/home.eot?r8zroq");
-  src: url("../fonts/home.eot?r8zroq#iefix") format("embedded-opentype"), url("../fonts/home.ttf?r8zroq") format("truetype"), url("../fonts/home.woff?r8zroq") format("woff"), url("../fonts/home.svg?r8zroq#home") format("svg");
+  src: url("../fonts/home.eot?1ou2pi");
+  src: url("../fonts/home.eot?1ou2pi#iefix") format("embedded-opentype"), url("../fonts/home.ttf?1ou2pi") format("truetype"), url("../fonts/home.woff?1ou2pi") format("woff"), url("../fonts/home.svg?1ou2pi#home") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1142,12 +1142,48 @@ body.ie .ibg img {
   content: "";
 }
 
-.icon-fa-font:before {
+.icon-fa-envelope:before {
   content: "";
 }
 
-.icon-fa-support:before {
+.icon-fa-font:before {
   content: "";
+}
+
+.icon-fa-left:before {
+  content: "";
+}
+
+.icon-fa-map-marker:before {
+  content: "";
+}
+
+.icon-fa-mobile-phone:before {
+  content: "";
+}
+
+.icon-fa-right:before {
+  content: "";
+}
+
+.icon-fa-support:before {
+  content: "";
+}
+
+.icon-Facebook:before {
+  content: "";
+}
+
+.icon-Google:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-Twitter:before {
+  content: "";
 }
 
 .service {
@@ -1283,11 +1319,126 @@ body.ie .ibg img {
 }
 
 .content-about__text {
-  /* Style for "Lorem ipsu" */
   color: #555555;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin: 0px 0px 69px 0px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -20px 0px 0px 0px;
+  width: 38px;
+  height: 41px;
+}
+
+.slick-arrow.slick-prev {
+  background: url("../img/svg/fa-left.svg") center no-repeat;
+  background-color: #ddd;
+  z-index: 10;
+  left: 0;
+}
+
+.slick-arrow.slick-prev:hover {
+  background-color: #c0301c;
+}
+
+.slick-arrow.slick-prev.slick-disabled:hover {
+  background-color: inherit;
+}
+
+.slick-arrow.slick-next {
+  background: url("../img/svg/fa-right.svg") center no-repeat;
+  background-color: #ddd;
+  z-index: 10;
+  right: 0;
+}
+
+.slick-arrow.slick-next:hover {
+  background-color: #c0301c;
+}
+
+.slick-arrow.slick-next.slick-disabled:hover {
+  background-color: inherit;
+}
+
+.slider-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-about__item {
+  cursor: pointer;
+  width: 285px;
+}
+
+.slider-about__img {
+  position: relative;
+  z-index: 1;
+}
+
+.slider-about__prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 263px;
+  height: 100%;
+}
+
+.slider-about__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 19px 0px 15px 0px;
+}
+
+.slider-about__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.prev-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.soc-slider:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.icon-Facebook {
+  color: #fff;
+  font-size: 20px;
 }
 
 @media (min-width: 780px) {
