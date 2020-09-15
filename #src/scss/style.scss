@@ -65,6 +65,9 @@ body {
       max-width: none;
       padding: 0 10px;
    }
+   &_slider {
+      overflow: hidden;
+   }
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
@@ -255,25 +258,56 @@ body {
 }
 .slider-about {
    display: flex;
+   margin-left: -26px;
+
    // .slider-about__item
    &__item {
       cursor: pointer;
-      width: 285px;
+      padding-left: 26px;
    }
    // .slider-about__img
    &__img {
-      position: relative;
-      z-index: 1;
+      width: 100%;
+      height: 250px;
    }
+   // .slider-about__wrap
+   &__wrap {
+      position: relative;
+   }
+
    // .slider-about__prev
    &__prev {
       position: absolute;
       top: 0;
       left: 0;
       background-color: rgba(0, 0, 0, 0.5);
-      width: 263px;
+      width: 100%;
       height: 100%;
    }
+
+   .prev-slider {
+      display: flex;
+      justify-content: center;
+
+      // .prev-slider__list
+      &__list {
+         position: absolute;
+         bottom: 0;
+         margin-bottom: 30px;
+         display: flex;
+      }
+      // .prev-slider__item
+      &__item {
+         padding: 6px 10px;
+         &:hover {
+            background-color: rgb(124, 22, 22);
+         }
+      }
+      // .prev-slider__link
+      &__link {
+      }
+   }
+
    // .slider-about__title
    &__title {
       display: flex;
@@ -294,23 +328,4 @@ body {
       font-size: 13px;
       font-weight: 400;
    }
-}
-.prev-slider {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   // border: 1px solid red;
-   // .prev-slider__soc
-   &__soc {
-   }
-}
-.soc-slider {
-   &:hover{
-      background-color: red;
-      cursor: pointer;
-   }
-}
-.icon-Facebook {
-   color:#fff;
-   font-size: 20px;
 }

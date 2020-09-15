@@ -25,7 +25,7 @@ if ($('.slider-about').length>0){
 		accessibility:false,
 		slidesToShow: 4,		
 		autoplaySpeed: 3000,
-		variableWidth: true,
+		// variableWidth: true,
 		// centerMode: true,		
 		//asNavFor:'',
 		//appendDots:

@@ -150,6 +150,10 @@ body.lock {
   border: 1px solid #15eb15;
 }
 
+._container_slider {
+  overflow: hidden;
+}
+
 .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,16 +1372,21 @@ body.ie .ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -26px;
 }
 
 .slider-about__item {
   cursor: pointer;
-  width: 285px;
+  padding-left: 26px;
 }
 
 .slider-about__img {
+  width: 100%;
+  height: 250px;
+}
+
+.slider-about__wrap {
   position: relative;
-  z-index: 1;
 }
 
 .slider-about__prev {
@@ -1385,8 +1394,34 @@ body.ie .ibg img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 263px;
+  width: 100%;
   height: 100%;
+}
+
+.slider-about .prev-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-about .prev-slider__list {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-about .prev-slider__item {
+  padding: 6px 10px;
+}
+
+.slider-about .prev-slider__item:hover {
+  background-color: #7c1616;
 }
 
 .slider-about__title {
@@ -1417,28 +1452,6 @@ body.ie .ibg img {
   color: #555555;
   font-size: 13px;
   font-weight: 400;
-}
-
-.prev-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.soc-slider:hover {
-  background-color: red;
-  cursor: pointer;
-}
-
-.icon-Facebook {
-  color: #fff;
-  font-size: 20px;
 }
 
 @media (min-width: 780px) {
