@@ -11,7 +11,7 @@
    width: 30px;
    height: 18px;
    cursor: pointer;
-   z-index: 5;
+   z-index: 20;
    span {
       @include anim(0.3s, 0s);
       top: 8px;
@@ -62,7 +62,7 @@
    &.fixed:before {
       content: "";
       position: absolute;
-      z-index: 2;
+      z-index: 20;
       top: 0;
       left: 0;
       width: 100%;
@@ -71,7 +71,7 @@
       @include anim(0.3s, 0s);
    }
 }
-
+// .menu
 .menu {
    display: flex;
    position: relative;
@@ -84,7 +84,7 @@
       font-size: 24px;
       font-weight: 700;
       display: inline-flex;
-      z-index: 5;
+      z-index: 20;
       @media (max-width:700px){
          font-size: 18px;
       }
@@ -128,7 +128,7 @@
       font-weight: 400;
       letter-spacing: 0.35px;
       position: relative;
-      z-index: 4;
+      z-index: 20;
       @media (max-width: 700px) {
          font-size: 18px;
       }
@@ -137,9 +137,9 @@
          position: absolute;
          display: block;
          width: 100%;
-         bottom: -5px;
+         bottom: -1px;
          left: 0;
-         height: 2px;
+         height: 1px;
          background-color:#fff;
          transform: scale(0);
          @include anim(0.3s,0s);

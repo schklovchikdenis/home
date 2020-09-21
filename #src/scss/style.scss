@@ -21,7 +21,7 @@ $fontfamily: "Roboto Slab";
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minwidth: 320px;
-$mw: 1100;
+$mw: 1140;
 $md1: $mw + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -65,7 +65,7 @@ body {
       max-width: none;
       padding: 0 10px;
    }
-   &_slider {
+   &__slider {
       overflow: hidden;
    }
 }
@@ -92,11 +92,11 @@ body {
 // @import "home.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
-//<ОСНОВНОЙ БЛОК>====================================================================================================
+//<SERVISE>====================================================================================================
 .service {
    padding: 100px 0px 65px 0px;
    @media (max-width: 700px) {
-      padding: 30px 0px 15px 0px;
+      padding: 40px 0px 5px 0px;
    }
    // .service__row
    &__row {
@@ -114,7 +114,7 @@ body {
       flex-direction: column;
       align-items: center;
       padding-left: 22px;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       cursor: pointer;
       &:hover .icon-fa-font,
       &:hover .icon-fa-code,
@@ -188,11 +188,14 @@ body {
    }
 }
 
-//====================================================================================================
+//<ABOUT>====================================================================================================
 
 .about {
-   padding: 102px 100px;
+   padding: 102px 0px 0px 0px;
    background-color: #f8f8f8;
+   @media (max-width: 700px) {
+      padding: 40px 0px 40px 0px;
+   }
 }
 .content-about {
    // .content-about__row
@@ -215,117 +218,48 @@ body {
    }
 }
 
-.slick-arrow {
-   position: absolute;
-   top: 50%;
-   margin: -20px 0px 0px 0px;
-   width: 38px;
-   height: 41px;
-   &.slick-prev {
-      background: url("../img/svg/fa-left.svg") center no-repeat;
-      background-color: #ddd;
-      z-index: 10;
-      left: 0;
-      &:hover {
-         background-color: #c0301c;
-      }
-      &.slick-disabled {
-         &:hover {
-            background-color: inherit;
-         }
-      }
+.slider-team {
+   &__container {
+      overflow: hidden;
    }
-   &.slick-next {
-      background: url("../img/svg/fa-right.svg") center no-repeat;
-      background-color: #ddd;
-      z-index: 10;
-      right: 0;
-      &:hover {
-         background-color: #c0301c;
-      }
-      &.slick-disabled {
-         &:hover {
-            background-color: inherit;
-         }
-      }
+   // .slider__row
+   &__row {
+      display: flex;
+      margin-left: -26px;
    }
-}
-
-.about {
-   // .about__slider
-   &__slider {
-   }
-}
-.slider-about {
-   display: flex;
-   margin-left: -26px;
-
-   // .slider-about__item
-   &__item {
-      cursor: pointer;
+   // .slider__column
+   &__column {
+      flex: 0 1 25%;
       padding-left: 26px;
    }
-   // .slider-about__img
-   &__img {
-      width: 100%;
-      height: 250px;
+   // .slider__item
+   &__item {
    }
-   // .slider-about__wrap
-   &__wrap {
+   // .slider__image
+   &__image {
       position: relative;
-   }
-
-   // .slider-about__prev
-   &__prev {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 100%;
-   }
-
-   .prev-slider {
-      display: flex;
-      justify-content: center;
-
-      // .prev-slider__list
-      &__list {
+      padding: 0px 0px 100% 0px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
          position: absolute;
-         bottom: 0;
-         margin-bottom: 30px;
-         display: flex;
+         top: 0;
+         left: 0;
       }
-      // .prev-slider__item
-      &__item {
-         padding: 6px 10px;
-         &:hover {
-            background-color: rgb(124, 22, 22);
-         }
-      }
-      // .prev-slider__link
-      &__link {
+      .slider-team__soc {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color:rgba(0,0,0,0.5);
       }
    }
-
-   // .slider-about__title
-   &__title {
-      display: flex;
-      justify-content: center;
-      color: #555555;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      margin: 19px 0px 15px 0px;
-   }
-   // .slider-about__subtitle
-   &__subtitle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #555555;
-      font-size: 13px;
-      font-weight: 400;
+   &__body {
+      font-size: 20px;
    }
 }
+
+//<  >====================================================================================================
