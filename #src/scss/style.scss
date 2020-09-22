@@ -221,16 +221,23 @@ body {
 .slider-team {
    &__container {
       overflow: hidden;
+      position: relative;
    }
    // .slider__row
    &__row {
       display: flex;
       margin-left: -26px;
+      @media (max-width: $md2+px) {
+         margin-left: -13px;
+      }
    }
    // .slider__column
    &__column {
       flex: 0 1 25%;
       padding-left: 26px;
+      @media (max-width: $md2+px) {
+         padding-left: 13px;
+      }
    }
    // .slider__item
    &__item {
@@ -238,7 +245,7 @@ body {
    // .slider__image
    &__image {
       position: relative;
-      padding: 0px 0px 100% 0px;
+      padding: 0px 0px 94% 0px;
       img {
          width: 100%;
          height: 100%;
@@ -254,7 +261,7 @@ body {
          position: absolute;
          top: 0;
          left: 0;
-         background-color:rgba(0,0,0,0.5);
+         background-color: rgba(0, 0, 0, 0.5);
       }
    }
    &__body {
@@ -262,4 +269,30 @@ body {
    }
 }
 
+.slick-slider {
+   position: initial;
+}
+.slick-arrow {
+   position: absolute;
+   width: 10px;
+   height: 20px;
+   z-index: 5;
+   top: calc(50% - 40px);
+   // padding: 10px;
+}
+.slick-arrow.slick-prev {
+   background: url("../img/svg/fa-left.svg") center no-repeat;
+   left: 0;
+   padding: 20px 15px;
+   background-color: red;
+}
+.slick-arrow.slick-next {
+   background: url("../img/svg/fa-right.svg") center no-repeat;
+   right: 0;
+   padding: 20px 15px;
+   background-color: red;
+}
+.slick-arrow.slick-disabled {
+   background-color: initial;
+}
 //<  >====================================================================================================
