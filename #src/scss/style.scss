@@ -191,7 +191,7 @@ body {
 //<ABOUT>====================================================================================================
 
 .about {
-   padding: 102px 0px 0px 0px;
+   padding: 102px 0px 100px 0px;
    background-color: #f8f8f8;
    @media (max-width: 700px) {
       padding: 40px 0px 40px 0px;
@@ -222,6 +222,9 @@ body {
    &__container {
       overflow: hidden;
       position: relative;
+      @media (max-width: 450px) {
+         padding: 0px 20px;
+      }
    }
    // .slider__row
    &__row {
@@ -241,6 +244,12 @@ body {
    }
    // .slider__item
    &__item {
+      &:hover {
+         .soc-team {
+            transform: scale(1);
+            @include anim(0.3s, 0s);
+         }
+      }
    }
    // .slider__image
    &__image {
@@ -254,7 +263,8 @@ body {
          top: 0;
          left: 0;
       }
-      .slider-team__soc {
+
+      .soc-team {
          width: 100%;
          height: 100%;
          object-fit: cover;
@@ -262,37 +272,128 @@ body {
          top: 0;
          left: 0;
          background-color: rgba(0, 0, 0, 0.5);
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+         transform: scale(0);
+         @include anim(0.3s, 0s);
+         @media (max-width: $md2+px) {
+            transform: scale(1);
+         }
+         // .soc-team__list
+         &__list {
+            // border: 1px solid rgb(230, 8, 8);
+            display: flex;
+            margin-bottom: 32px;
+         }
+         // .soc-team__item
+         &__item {
+         }
+         .icon-Facebook,
+         .icon-Twitter,
+         .icon-Google,
+         .icon-linkedin {
+            // font-size: 18px;
+            color: #fff;
+            &:hover {
+               background-color: #c0301c;
+            }
+         }
+         .icon-Facebook {
+            font-size: 19px;
+            padding: 6px 10px;
+         }
+         .icon-Twitter {
+            font-size: 16px;
+            padding: 7.5px 10px;
+         }
+         .icon-Google {
+            font-size: 19px;
+            padding: 6px 10px;
+         }
+         .icon-linkedin {
+            font-size: 17px;
+            padding: 3px 10px 11px 10px;
+         }
+
+         // .soc-team__link
+         &__link {
+            cursor: pointer;
+         }
       }
    }
    &__body {
-      font-size: 20px;
+      text-align: center;
    }
 }
 
-.slick-slider {
-   position: initial;
+.body-slider {
+   // .body-slider__name
+   &__name {
+      color: #555555;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 20px 0px 15px 0px;
+   }
+   // .body-slider__post
+   &__post {
+      color: #555555;
+      font-family: "Roboto Slab";
+      font-size: 13px;
+      font-weight: 400;
+   }
 }
-.slick-arrow {
+
+.slider-team__row .slick-arrow {
    position: absolute;
-   width: 10px;
-   height: 20px;
    z-index: 5;
-   top: calc(50% - 40px);
-   // padding: 10px;
+   padding: 19px 14px;
+   top: calc(50% - 50px);
 }
-.slick-arrow.slick-prev {
+.slider-team__row .slick-arrow.slick-prev {
    background: url("../img/svg/fa-left.svg") center no-repeat;
-   left: 0;
-   padding: 20px 15px;
-   background-color: red;
+   left: 26px;
+   background-color: #c0301c;
 }
-.slick-arrow.slick-next {
+.slider-team__row .slick-arrow.slick-next {
    background: url("../img/svg/fa-right.svg") center no-repeat;
    right: 0;
-   padding: 20px 15px;
-   background-color: red;
+   background-color: #c0301c;
 }
-.slick-arrow.slick-disabled {
+.slider-team__row .slick-arrow.slick-disabled {
    background-color: initial;
+}
+.slider-team__row .slick-slider {
+}
+.bullet {
+   margin-top: 20px;
+   .slick-dots {
+      display: flex;
+      justify-content: center;
+   }
+   .slick-dots li button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 2px solid #c0301c;
+      margin: 0px 7px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .slick-dots li.slick-active button {
+      &:after {
+         content: "";
+         width: 7px;
+         height: 7px;
+         background-color: #c0301c;
+         position: absolute;
+         border-radius: 50%;
+      }
+   }
 }
 //<  >====================================================================================================

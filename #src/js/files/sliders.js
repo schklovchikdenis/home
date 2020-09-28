@@ -20,13 +20,26 @@ if ($('.slider-team__row').length > 0) {
 			breakpoint: 990,
 			settings: {
 				slidesToShow: 3,
+				arrows: false,
+				dots: true,
+				appendDots: $('.bullet'),
 			}
-		}, {
+		},
+		{
 			breakpoint: 700,
 			settings: {
 				slidesToShow: 2,
 				arrows: false,
 				dots: true,
+				appendDots: $('.bullet'),
+			}
+		}, {
+			breakpoint: 460,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+				appendDots: $('.bullet'),
 			}
 		}]
 	});
