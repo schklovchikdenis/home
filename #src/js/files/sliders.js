@@ -17,7 +17,7 @@ if ($('.slider-team__row').length > 0) {
 		nextArrow: '<button type="button" class="slick-next"></button>',
 		prevArrow: '<button type="button" class="slick-prev"></button>',
 		responsive: [{
-			breakpoint: 990,
+			breakpoint: 992,
 			settings: {
 				slidesToShow: 3,
 				arrows: false,

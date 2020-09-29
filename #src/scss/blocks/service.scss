@@ -1,0 +1,94 @@
+//<SERVISE>====================================================================================================
+.service {
+   padding: 100px 0px 65px 0px;
+   @media (max-width: $md2+px) {
+      padding: 40px 0px 5px 0px;
+   } // .service__row
+   &__row {
+      // border: 1px solid red;
+      display: flex;
+      margin-left: -22px;
+      @media (max-width: 700px) {
+         display: block;
+      }
+   }
+   // .service__column
+   &__column {
+      flex: 0 0 33.333%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 22px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      &:hover .icon-fa-font,
+      &:hover .icon-fa-code,
+      &:hover .icon-fa-support {
+         color: #fff;
+         @include anim(0.3s, 0s);
+      }
+      &:hover .service__icon {
+         background-color: #c0301c;
+         @include anim(0.3s, 0s);
+      }
+
+      // border: 1px solid green;
+   }
+   // .service__icon
+   &__icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid #dddddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 0px 30px 0px;
+      @include anim(0.3s, 0s);
+      @media (max-width: 700px) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+   // .service__text
+   &__text {
+   }
+}
+
+.icon-fa-font,
+.icon-fa-code,
+.icon-fa-support {
+   font-size: 40px;
+   color: #c0301c;
+   @include anim(0.3s, 0s);
+}
+
+.text-service {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   // .text-service__title
+   &__title {
+      flex: 1 1 auto;
+      margin: 0px 0px 24px 0px;
+      color: #555555;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      @media (max-width: 700px) {
+         margin: 0px 0px 12px 0px;
+      }
+   }
+   // .text-service__text
+   &__text {
+      text-align: center;
+      color: #555555;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      // padding: 10px 0px;
+   }
+}

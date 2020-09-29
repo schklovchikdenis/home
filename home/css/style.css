@@ -893,6 +893,78 @@ body.ie .ibg img {
   margin: 0px 0px 70px 0px;
 }
 
+@font-face {
+  font-family: "home";
+  src: url("../fonts/home.eot?1ou2pi");
+  src: url("../fonts/home.eot?1ou2pi#iefix") format("embedded-opentype"), url("../fonts/home.ttf?1ou2pi") format("truetype"), url("../fonts/home.woff?1ou2pi") format("woff"), url("../fonts/home.svg?1ou2pi#home") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "home" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fa-code:before {
+  content: "";
+}
+
+.icon-fa-envelope:before {
+  content: "";
+}
+
+.icon-fa-font:before {
+  content: "";
+}
+
+.icon-fa-left:before {
+  content: "";
+}
+
+.icon-fa-map-marker:before {
+  content: "";
+}
+
+.icon-fa-mobile-phone:before {
+  content: "";
+}
+
+.icon-fa-right:before {
+  content: "";
+}
+
+.icon-fa-support:before {
+  content: "";
+}
+
+.icon-Facebook:before {
+  content: "";
+}
+
+.icon-Google:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-Twitter:before {
+  content: "";
+}
+
 /* Стиль иконки бургера */
 
 .icon-menu {
@@ -1119,78 +1191,6 @@ body.ie .ibg img {
   font-weight: 400;
 }
 
-@font-face {
-  font-family: "home";
-  src: url("../fonts/home.eot?1ou2pi");
-  src: url("../fonts/home.eot?1ou2pi#iefix") format("embedded-opentype"), url("../fonts/home.ttf?1ou2pi") format("truetype"), url("../fonts/home.woff?1ou2pi") format("woff"), url("../fonts/home.svg?1ou2pi#home") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "home" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-fa-code:before {
-  content: "";
-}
-
-.icon-fa-envelope:before {
-  content: "";
-}
-
-.icon-fa-font:before {
-  content: "";
-}
-
-.icon-fa-left:before {
-  content: "";
-}
-
-.icon-fa-map-marker:before {
-  content: "";
-}
-
-.icon-fa-mobile-phone:before {
-  content: "";
-}
-
-.icon-fa-right:before {
-  content: "";
-}
-
-.icon-fa-support:before {
-  content: "";
-}
-
-.icon-Facebook:before {
-  content: "";
-}
-
-.icon-Google:before {
-  content: "";
-}
-
-.icon-linkedin:before {
-  content: "";
-}
-
-.icon-Twitter:before {
-  content: "";
-}
-
 .service {
   padding: 100px 0px 65px 0px;
 }
@@ -1328,7 +1328,7 @@ body.ie .ibg img {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0px 0px 69px 0px;
+  margin: 0px 0px 35px 0px;
 }
 
 .slider-team__container {
@@ -1340,6 +1340,7 @@ body.ie .ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 35px;
   margin-left: -26px;
 }
 
@@ -1550,6 +1551,14 @@ body.ie .ibg img {
     max-width: 750px;
   }
 
+  .service {
+    padding: 40px 0px 5px 0px;
+  }
+
+  .about {
+    padding: 40px 0px 40px 0px;
+  }
+
   .slider-team__row {
     margin-left: -13px;
   }
@@ -1562,6 +1571,16 @@ body.ie .ibg img {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+  }
+
+  .bullet .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .bullet .slick-dots li.slick-active button:after {
+    width: 4px;
+    height: 4px;
   }
 }
 
@@ -1631,10 +1650,6 @@ body.ie .ibg img {
     font-size: 18px;
   }
 
-  .service {
-    padding: 40px 0px 5px 0px;
-  }
-
   .service__row {
     display: block;
   }
@@ -1649,6 +1664,32 @@ body.ie .ibg img {
 
   .about {
     padding: 40px 0px 40px 0px;
+  }
+
+  .slider-team__image .soc-team .icon-Facebook {
+    font-size: 24 px;
+  }
+
+  .slider-team__image .soc-team .icon-Twitter {
+    font-size: 20px;
+  }
+
+  .slider-team__image .soc-team .icon-Google {
+    font-size: 24px;
+  }
+
+  .slider-team__image .soc-team .icon-linkedin {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-about__row {
+    display: block;
+  }
+
+  .content-about__text {
+    margin: 0px 0px 25px 0px;
   }
 }
 
