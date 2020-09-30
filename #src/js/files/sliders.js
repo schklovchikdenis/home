@@ -2,7 +2,7 @@
 if ($('.slider-team__row').length > 0) {
 	$('.slider-team__row').slick({
 		// autoplay: true,
-		infinite: false,
+		infinite: true,
 		// dots: true,
 		// centerMode: true,
 		arrows: true,

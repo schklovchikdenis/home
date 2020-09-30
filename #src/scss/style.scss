@@ -54,7 +54,7 @@ body {
    max-width: $mw + px;
    margin: 0 auto;
    width: 100%;
-   border: 1px solid rgb(21, 235, 21);
+   // border: 1px solid rgb(21, 235, 21);
    @media (max-width: $md1+px) {
       max-width: 970px;
    }
@@ -92,6 +92,7 @@ body {
 @import "fullscreen.scss";
 @import "blocks/service.scss";
 @import "blocks/about.scss";
+@import "blocks/works.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<  >====================================================================================================

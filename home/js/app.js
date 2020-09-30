@@ -19,7 +19,7 @@ $(document).ready(function() {
 if ($('.slider-team__row').length > 0) {
 	$('.slider-team__row').slick({
 		// autoplay: true,
-		infinite: false,
+		infinite: true,
 		// dots: true,
 		// centerMode: true,
 		arrows: true,
@@ -905,6 +905,7 @@ $(document).on('keydown',function(e) {
 		popupClose();
 	}
 });
+
 //Плавный скролл по ссылкам
 $('.goto').click(function() {
 		var el=$(this).attr('href').replace('#','');
@@ -1075,6 +1076,7 @@ function tip(){
 		$(this).toggleClass('active');
 	});
 }
+
 // Фиксированная шапка при скролле
 $(window).scroll(function () {
 	var the_top = $(document).scrollTop();
@@ -1084,5 +1086,36 @@ $(window).scroll(function () {
 	else {
 		$('.header').removeClass('fixed');
 	}
+});
+
+//Fullscreen
+$(window).resize(function (event) {
+	mainblock();
+});
+function mainblock() {
+	var h = $(window).outerHeight();
+	$('.mainblock').css('min-height', h);
+}
+mainblock();
+
+//Filter
+$('.filter__item').click(function (event) {
+	var i = $(this).data('filter');
+	if (i == 1) {
+		$('.works__column').show();
+	} else {
+		$('.works__column').hide();
+		$('.works__column.f_' + i).show();
+	}
+	$('.filter__item').removeClass('active');
+	$(this).addClass('active');
+
+	return false;
+});
+
+// Paralax
+$(window).scroll(function (event) {
+	var s = 0 - $(this).scrollTop() / 2;
+	$('.mainblock__img').css('transform', 'translate3d(0, ' + s + 'px, 0)');
 });
 });
