@@ -1,31 +1,48 @@
 //< WORKS >====================================================================================================
 .works {
-   // .works__container
-   &__container {
-   }
+   padding: 100px 0px;
    // .works__filter
    &__filter {
+      display: flex;
+      justify-content: center;
    }
    // .works__items
    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -30px;
    }
    // .works__column
    &__column {
+      padding-left: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      flex: 0 1 auto;
    }
    // .works__item
    &__item {
+      padding: 0px 10px;
    }
 }
 
 .filter {
    // .filter__list
    &__list {
+      display: flex;
    }
    // .filter__item
    &__item {
+      margin: 0px 15px 30px 15px;
+      color: #555555;
+      font-family: "Roboto Slab";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
    }
 }
 .active {
+   color: #c0301c;
 }
 .f {
    // .f_1
