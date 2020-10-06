@@ -1102,10 +1102,10 @@ mainblock();
 $('.filter__item').click(function (event) {
 	var i = $(this).data('filter');
 	if (i == 1) {
-		$('.works__column').show();
+		$('.works__item').show();
 	} else {
-		$('.works__column').hide();
-		$('.works__column.f_' + i).show();
+		$('.works__item').hide();
+		$('.works__item.f_' + i).show();
 	}
 	$('.filter__item').removeClass('active');
 	$(this).addClass('active');
