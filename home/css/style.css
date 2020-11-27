@@ -905,7 +905,6 @@ body.ie .ibg img {
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "home" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

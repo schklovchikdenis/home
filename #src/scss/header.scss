@@ -78,7 +78,7 @@
    position: relative;
    justify-content: space-between;
    align-items: center;
-    // .menu__logo
+   // .menu__logo
    &__logo {
       color: #ffffff;
       font-family: Montserrat;
@@ -86,7 +86,7 @@
       font-weight: 700;
       display: inline-flex;
       z-index: 20;
-      @media (max-width:700px){
+      @media (max-width: 700px) {
          font-size: 18px;
       }
    }
@@ -133,7 +133,7 @@
       @media (max-width: 700px) {
          font-size: 18px;
       }
-      &:after{
+      &:after {
          content: "";
          position: absolute;
          display: block;
@@ -141,13 +141,13 @@
          bottom: -1px;
          left: 0;
          height: 1px;
-         background-color:#fff;
+         background-color: #fff;
          transform: scale(0);
-         @include anim(0.3s,0s);
+         @include anim(0.3s, 0s);
       }
-      &:hover:after{
+      &:hover:after {
          transform: scale(1);
-         @include anim(0.3s,0s);
+         @include anim(0.3s, 0s);
       }
    }
 }

@@ -1,6 +1,7 @@
 $icomoon-font-path: "../fonts" !default;
 $icomoon-font-family: "home" !default;
 
+
 $icon-fa-code: "\e900";
 $icon-fa-envelope: "\e901";
 $icon-fa-font: "\e902";
@@ -30,12 +31,13 @@ $icon-Twitter: "\e90b";
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
-  speak: never;
+  // speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;

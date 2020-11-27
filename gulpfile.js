@@ -80,7 +80,7 @@ function css() {
             overrideBrowserslist: ['last 5 version'],
             cascade: true,
          })
-   )
+      )
       .pipe(webpcss())
       .pipe(dest(path.build.css))
       .pipe(clean_css())
@@ -190,7 +190,7 @@ function fontsStyle(params) {
    }
 }
 function cb() {
-   
+
 }
 
 /* отслеживаемые файлы */
@@ -207,7 +207,7 @@ function clean(params) {
 
 
 /* выполнение функций */
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts),fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 

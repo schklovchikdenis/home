@@ -1116,6 +1116,6 @@ $('.filter__item').click(function (event) {
 // Paralax
 $(window).scroll(function (event) {
 	var s = 0 - $(this).scrollTop() / 2;
-	$('.mainblock__img').css('transform', 'translate3d(0, ' + s + 'px, 0)');
+	$('.mainblock__image').css('transform', 'translate3d(0, ' + s + 'px, 0)');
 });
 });
