@@ -1,9 +1,7 @@
 //< WORKS >====================================================================================================
 .works {
-   padding: 100px 0px;
-   @media (max-width: $md2+px) {
-      padding: 40px 0px 40px 0px;
-   }
+   @include adaptiv-value("padding-bottom", 100, 35, 1);
+   @include adaptiv-value("padding-top", 100, 35, 1);
    // .works__filter
    &__filter {
       display: flex;
@@ -87,7 +85,7 @@
    height: 100%;
    left: 0;
    top: 0;
-   background-color: rgba(0, 0, 0, 0.5);
+   background-color: rgba(192, 47, 28, 0.6        );
    display: flex;
    justify-content: center;
    align-items: center;

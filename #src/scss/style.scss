@@ -20,9 +20,16 @@ $fontfamily: "Roboto Slab";
 //</ШРИФТЫ>=======================================================================================================
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
-$minwidth: 320px;
-$mw: 1140;
-$md1: $mw + 12;
+// $minwidth: 320px;
+// $mw: 1140;
+// $md1: $mw + 12;
+// $md2: 991.98;
+// $md3: 767.98;
+// $md4: 479.98;
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1140;
+$md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
@@ -51,20 +58,18 @@ body {
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 ._container {
-   max-width: $mw + px;
-   margin: 0 auto;
-   width: 100%;
-   // border: 1px solid rgb(21, 235, 21);
-   @media (max-width: $md1+px) {
-      max-width: 970px;
-   }
-   @media (max-width: $md2+px) {
-      max-width: 750px;
-   }
-   @media (max-width: $md3+px) {
-      max-width: none;
-      padding: 0 10px;
-   }
+   max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
    &__slider {
       overflow: hidden;
    }
@@ -93,6 +98,9 @@ body {
 @import "blocks/service.scss";
 @import "blocks/about.scss";
 @import "blocks/works.scss";
+@import "blocks/parallax.scss";
+@import "blocks/blog.scss";
+@import "blocks/clients.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<  >====================================================================================================

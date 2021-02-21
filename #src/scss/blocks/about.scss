@@ -6,9 +6,6 @@
    @media (max-width: $md2+px) {
       padding: 40px 0px 40px 0px;
    }
-   // @media (max-width: 700px) {
-   //    padding: 40px 0px 40px 0px;
-   // }
 }
 .content-about {
    // .content-about__row
@@ -113,10 +110,10 @@
          .icon-Google,
          .icon-linkedin {
             color: #fff;
-            @include anim(0.3s,0s);
+            @include anim(0.3s, 0s);
             &:hover {
                background-color: #c0301c;
-               @include anim(0.3s,0s);
+               @include anim(0.3s, 0s);
             }
          }
          .icon-Facebook {
