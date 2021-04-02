@@ -1,7 +1,8 @@
 //<ABOUT>====================================================================================================
 
 .about {
-   padding: 102px 0px 100px 0px;
+   @include adaptiv-value("padding-bottom", 100, 35, 1);
+   @include adaptiv-value("padding-top", 100, 35, 1);
    background-color: #f8f8f8;
    @media (max-width: $md2+px) {
       padding: 40px 0px 40px 0px;

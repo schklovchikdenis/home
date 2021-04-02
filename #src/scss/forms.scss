@@ -1,30 +1,51 @@
 //<FORM (a.f+tab)>====================================================================================================
 .form {
+   p {
+      display: inline-block;
+      font-size: 12px;
+      color: #555555;
+      margin: 10px 0px 0px 0px;
+   }
+   p:before {
+      content: "*";
+      color: #c0301c;
+      margin: 0px 2px 0px 0px;
+   }
 }
 .form-row {
    @include flexbox();
    margin: 0px -15px;
+   flex-wrap: wrap;
 }
 .form__column {
+   flex: 0 1 50%;
+   margin: 0px 0px 21px 0px;
    padding: 0px 15px;
+   @media (max-width: 560px) {
+      flex: 0 1 100%;
+   }
 }
 .form-input {
 }
 .form-button {
+}
+.form__line {
+   border: 1px solid black;
+   text-transform: inherit;
 }
 //</FORM>====================================================================================================
 
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
    display: inline-block;
-   padding: 15px 35px;
-   border: 2px solid #ffffff;
+   padding: 17px 36px;
+   border: 1px solid #555555;
    @include anim(0.3s, 0s);
-   border-radius: 2px;
    text-transform: uppercase;
+   margin: 0px 30px 0px 0px;
    &:hover {
-      color: #c0301c;
-      background-color: #fff;
+      color: #ffffff;
+      background-color: #c0301c;
       @include anim(0.3s, 0s);
    }
    &.fw {
@@ -125,16 +146,36 @@ textarea {
    border-radius: 0 !important;
    width: 100%;
    display: block;
-   padding: 0px 20px;
+   padding: 0px 17px;
+   height: 40px;
    &.focus {
+      border: 1px solid green;
    }
    &.err {
+      border: 1px solid red;
    }
+   &[data-value="NAME"],
+   &[data-value="YOUR E-MAIL"],
+   &[data-value="YOUR SUBJECT"],
+   &[data-value="COMPANY NAME"] {
+      font-size: 12px;
+      // text-transform: uppercase;
+      color: #555555;
+   }
+   // text-transform: capitalize;
 }
 textarea.input {
    resize: none;
-   padding: 0px 0px;
+   padding: 17px 0px 0px 17px;
+   height: 104px;
+   border: 1px solid black;
+   margin: 0px 0px 21px 0px;
+   &[data-value="WRITE YOUR MESSAGE"] {
+      font-size: 12px;
+      color: #555555;
+   }
 }
+
 //</INPUT>====================================================================================================
 
 //<CHECK (chk+tab)>====================================================================================================
