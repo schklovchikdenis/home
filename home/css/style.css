@@ -183,6 +183,10 @@ body.lock {
   padding: 0px 15px;
 }
 
+.form__btn {
+  margin: 0px 30px 0px 0px;
+}
+
 .form__line {
   border: 1px solid black;
   text-transform: inherit;
@@ -196,7 +200,6 @@ body.lock {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-transform: uppercase;
-  margin: 0px 30px 0px 0px;
 }
 
 .btn:hover {
@@ -2181,7 +2184,7 @@ body.ie .ibg img {
 }
 
 .item-contact__link:after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;

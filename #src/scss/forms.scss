@@ -27,7 +27,8 @@
 }
 .form-input {
 }
-.form-button {
+.form__btn {
+   margin: 0px 30px 0px 0px;
 }
 .form__line {
    border: 1px solid black;
@@ -42,7 +43,6 @@
    border: 1px solid #555555;
    @include anim(0.3s, 0s);
    text-transform: uppercase;
-   margin: 0px 30px 0px 0px;
    &:hover {
       color: #ffffff;
       background-color: #c0301c;
