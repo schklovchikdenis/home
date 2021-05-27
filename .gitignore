@@ -3,4 +3,7 @@ package.json
 package-lock.json
 sourse
 Home.psd
-home
+#src
+Подсказка по шаблону.txt
+Подсказка по галп.txt
+.gitignore
