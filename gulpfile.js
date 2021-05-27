@@ -3,7 +3,7 @@ let source_folder = "#src";
 
 let fs = require('fs');
 
-/* пути */
+/* пути  */
 let path = {
    build: {
       html: project_folder + "/",
