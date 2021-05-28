@@ -1,6 +1,8 @@
-/node_modules
-/package.json
-/package-lock.json
-/sourse
-/Home.psd
-/gulpfile.js
+src
+node_modules
+sourse
+Подсказка по галп
+Подсказка по шаблону
+Home.psd
+package-lock.json
+package.json
